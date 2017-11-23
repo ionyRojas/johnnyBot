@@ -1,5 +1,5 @@
 # johnnyBot
 
 ## Getting Started
-
-> run : `nodemon`
+- run: `npm install`
+> and then run : `nodemon`
