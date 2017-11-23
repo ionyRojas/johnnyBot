@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Johnny Bot">
+    <meta name="author" content="Jonathan Rojas @Jonathan_RojasL">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Johnny Bot</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <header class="header">
+        <svg id="johnny-svg" width="337" height="79" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+           <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_2_blur">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+           </filter>
+          </defs>
+          <g>
+           <title>background</title>
+           <rect fill="transparent" id="canvas_background" height="81" width="339" y="-1" x="-1"/>
+           <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+            <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+           </g>
+          </g>
+          <g>
+           <title>Layer 1</title>
+           <text font-weight="bold" filter="url(#svg_2_blur)" opacity="0.85" xml:space="preserve" text-anchor="start" font-family="Junction, sans-serif" font-size="63" id="svg_2" y="59" x="1.5" stroke-width="2" stroke="#ffffff" fill="transparent">JohhnyBot</text>
+          </g>
+         </svg>
+    </header>
+    <section>
+      <article class="top-elements" > 
+        <h1 class="title">Probando Nodejs con api.ai en la Web</h1>
+        <button class="start-conversation">Grabar Mensaje</button>
+        <button class="end-conversation">Detener Grabacion</button>
+      </article>
+        
+      <article class="conversation">
+      </article>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
