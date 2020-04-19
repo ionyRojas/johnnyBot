@@ -9,7 +9,7 @@ const server = app.listen(process.env.PORT || 8000, () => {
   console.log('Express server listening on port http://localhost:%d in %s mode', server.address().port, app.settings.env);
 });
 
-const APIAI_TOKEN = '1a8e78c15b934f57b4240312b38ae4ac';
+const APIAI_TOKEN = '';
 const APIAI_SESSION_ID = 'Jonathans_Sesion';
 const apiai = require('apiai')(APIAI_TOKEN);
 const io = require('socket.io')(server);
